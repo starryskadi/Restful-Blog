@@ -1,0 +1,15 @@
+I developed this SKU Finder for Old Shop.com.mm because I wanna make easy for my content writer's life as I have to fetch a lot of data from the website sometimes. I developed the SKU Finder Tools Up to V4 for Old Shop.com.mm using Python, Beautiful Soup. After the transition period, the SKU Finder stops working and I need to update my tools to work with the new Shop.com.mm. Again I developed up to V8 using Selenium, Python and Beautiful Soup. 
+
+
+
+
+
+document.querySelector(".class").style.backgroundColor = "white";
+document.querySelector("#id").style.color = "black";
+
+
+var newBook = "javascript"
+
+
+Camel Case
+Snake Case
