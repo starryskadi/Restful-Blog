@@ -6,13 +6,8 @@ pipeline {
 
   }
   stages {
-    stage('') {
-      agent {
-        node {
-          label 'Nodejs'
-        }
-
-      }
+    stage('error') {
+      agent any
       steps {
         sh 'npm install'
         sh 'npm start'
