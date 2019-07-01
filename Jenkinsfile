@@ -14,7 +14,10 @@ pipeline {
     }
     stage('') {
       steps {
-        sh 'docker info'
+        script {
+          docker info
+        }
+
       }
     }
   }
