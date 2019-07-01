@@ -12,5 +12,16 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('') {
+      agent {
+        dockerfile {
+          filename 'DockerFile'
+        }
+
+      }
+      steps {
+        echo 'DockerFile'
+      }
+    }
   }
 }
