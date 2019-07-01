@@ -13,14 +13,8 @@ pipeline {
       }
     }
     stage('') {
-      agent {
-        dockerfile {
-          filename 'DockerFile'
-        }
-
-      }
       steps {
-        echo 'DockerFile'
+        sh 'docker'
       }
     }
   }
