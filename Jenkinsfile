@@ -12,5 +12,16 @@ pipeline {
         sh 'npm install'
       }
     }
+    stage('') {
+      agent {
+        node {
+          label 'docker'
+        }
+
+      }
+      steps {
+        sh '"docker build -t accountownerapp:B${BUILD_NUMBER} -f Dockerfile ."'
+      }
+    }
   }
 }
