@@ -7,18 +7,9 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
+    stage('Pre Install') {
       steps {
         sh 'npm install'
-      }
-    }
-    stage('') {
-      agent any
-      steps {
-        script {
-          docker.build registry + ":$BUILD_NUMBER"
-        }
-
       }
     }
   }
