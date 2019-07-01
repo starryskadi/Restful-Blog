@@ -10,7 +10,15 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm install'
-        sh 'node ./app.js'
+      }
+    }
+    stage('') {
+      agent any
+      steps {
+        script {
+          docker.build registry + ":$BUILD_NUMBER"
+        }
+
       }
     }
   }
