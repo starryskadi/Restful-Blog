@@ -12,13 +12,5 @@ pipeline {
         sh 'npm install'
       }
     }
-    stage('') {
-      steps {
-        script {
-          docker info
-        }
-
-      }
-    }
   }
 }
